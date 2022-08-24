@@ -4,7 +4,8 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open",
     "dev": "cross-env NODE_ENV=development npx webpack --mode development",
-    "build": "cross-env NODE_ENV=production npx webpack --mode production"
+    "build": "cross-env NODE_ENV=production npx webpack --mode production",
+    "ci": "rm -rf node_modules && yarn install --frozen-lockfile"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
